@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #007bff, #6610f2);
+  background: linear-gradient(135deg, #ffffff, #6610f2);
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -69,4 +69,147 @@ button {
 
 button:hover {
   background-color: #ffaa00;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e2f;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 15px #00ffc8;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.option-btn {
+  background: #00ffc8;
+  border: none;
+  padding: 12px 22px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  min-width: 100px;
+}
+
+.option-btn:hover {
+  background: #00b89c;
+  color: #fff;
+}
+
+.timer {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #00ffc8;
+}
+
+.score-section button,
+.quiz-section button {
+  background: #b307d9;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.score-section button:hover,
+.quiz-section button:hover {
+  background: #ffffff;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Button hover & click */
+.option-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(101, 70, 255, 0.3);
+}
+.option-btn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(101, 70, 255, 0.5);
+}
+.option-btn:active {
+  transform: scale(0.95);
+}
+
+/* Timer pulse */
+@keyframes pulse {
+  0%, 100% { color: #333; }
+  50% { color: #ff0000; }
+}
+
+.timer {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+/* Score section popup */
+.score-section {
+  background: #f5f7fa;
+  padding: 24px 36px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.score-section button {
+  background: #06d6a0;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+.score-section button:hover {
+  background: #028f6e;
 }
